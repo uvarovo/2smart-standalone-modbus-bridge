@@ -5,7 +5,7 @@ ENV PYTHON=/usr/bin/python3
 
 RUN apk update \
     && apk add bash git make gcc g++ python3 linux-headers udev tzdata \
-    && npm install serialport --build-from-source
+    && npm install serialport@^8.0.5 --build-from-source
 
 COPY .bin .bin
 COPY etc etc
